@@ -731,6 +731,14 @@ header.scrolled .nav-text
     margin: 20px 30px;
 }
 
+.events-cards .card:hover .event-date {
+    background-color: #14bdee;
+}
+
+.events-cards .card:hover .event-day, .events-cards .card:hover .event-month{
+    color: #fff;
+}
+
 .card-img-top{
     border-radius: 3px;
 }
@@ -763,9 +771,6 @@ header.scrolled .nav-text
     text-align: center;
 }
 
-.event-date:hover{
-    background-color: #14bdee;
-}
 
 .event-content{
     padding-left: 20px;
