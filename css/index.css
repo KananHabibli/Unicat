@@ -27,9 +27,13 @@ p{
 }
 
 p:last-of-type {
-    margin-bottom: 0;
+    margin: 0;
 }
 
+
+.card{
+    border: none;
+}
 
 /* HEADER / NAV */
 
@@ -574,14 +578,13 @@ header.scrolled .nav-text
 
 .register{
     background-image: url('../images/counter_background.jpg');
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .counter{
-    padding-top: 119px;
-    padding-bottom: 125px;
+    padding: 70px 0;
 }
 
 .counter-title{
@@ -589,6 +592,7 @@ header.scrolled .nav-text
     color: #FFFFFF;
     font-weight: 700;
     font-size: 32px;
+    margin-bottom: 0;
 }
 
 .counter-text{
@@ -597,7 +601,6 @@ header.scrolled .nav-text
 
 .counter-text p{
     color: #fff;
-    text-align: center;
 }
 
 .milestones{
@@ -636,8 +639,11 @@ header.scrolled .nav-text
     height: 100%;
     width: 380px;
     float: right;
-    padding: 0 40px;
+    padding: 40px 40px;
+    box-shadow: 0px 5px 40px rgba(29,34,47,0.15);
 }
+
+
 .counter-form-title {
     font-family: 'Roboto Slab', serif;
     font-size: 24px;
@@ -688,6 +694,627 @@ header.scrolled .nav-text
     box-shadow: 0px 5px 40px rgba(29,34,47,0.45);
 }
 
+/* MAIN / EVENTS */
+.events{
+    width: 100%;
+    padding-top: 93px;
+    padding-bottom: 70px;
+    background: #FFFFFF;
+}
+
+.events-title{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.events-title h2{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    color: #384158;
+    margin-bottom: 0;
+}
+
+.events-text{
+    line-height: 1.85;
+    margin-top: 14px;
+}
+
+.events-cards{
+    margin-top: 50px;
+}
+
+.events-cards .card{
+    width: 100%;
+    height: 95%;
+    margin: 20px 30px;
+}
+
+.card-img-top{
+    border-radius: 3px;
+}
+
+.event-date{
+    display: inline-block;
+    height: 60px;
+    min-width: 60px;
+    box-shadow: 0px 1px 10px rgba(29, 34, 47, 0.1);
+    transition: all 400ms ease;
+    font-family: 'Roboto Slab', serif;
+}
+
+.event-day {
+    font-size: 24px;
+    color: #14bdee;
+    font-weight: 700;
+    line-height: 0.75;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.event-month {
+    
+    font-size: 14px;
+    color: #14bdee;
+    font-weight: 400;
+    line-height: 0.75;
+    margin-top: 9px;
+    text-align: center;
+}
+
+.event-date:hover{
+    background-color: #14bdee;
+}
+
+.event-content{
+    padding-left: 20px;
+}
+
+.event-content-title a{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #384158;
+    transition: all 300ms ease;
+}
+
+.event-content-title a:hover{
+    color: #14bdee;
+}
+
+.event-content-date{
+    margin-top: 10px;
+    color: #b5b8be;
+    font-size: 14px;
+}
+
+.event-content-date i{
+    margin-right: 5px;
+}
+
+.event-content-text{
+    margin-top: 12px;
+}
+
+.event-interval{
+    margin-right: 8px;
+}
+
+/* MAIN / TUTORS */
+
+.tutors{
+    background-image: url('../images/team_background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding-top: 93px;
+    padding-bottom: 60px;
+}
+
+.tutors-title{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tutors-title h2{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    color: #384158;
+    margin-bottom: 0;
+}
+
+.tutors-text{
+    line-height: 1.85;
+    margin-top: 14px;
+}
+
+.tutors-cards{
+    margin-top: 43px;
+}
+
+.tutor-card{
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.tutor-card:hover .tutor-body{
+    box-shadow: 0px 5px 40px rgba(29,34,47,0.15);
+}
+
+.tutor-image{
+    width: 180px;
+    height: 160px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -86px;
+    z-index: 5;
+}
+
+.tutor-image img{
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 6px;
+}
+
+.tutor-body{
+    width: 100%;
+    padding-top: 108px;
+    padding-bottom: 24px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(29,34,47,0.1);
+    text-align: center;
+    transition: all 200ms ease;
+}
+
+.tutor-name a{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #384158;
+    transition: all 200ms ease;
+}
+
+.tutor-name a:hover{
+    color: #14bdee;
+}
+
+.tutor-position{
+    font-size: 14px;
+    font-weight: 400;
+    color: #76777a;
+    margin-top: 6px;
+}
+
+.tutor-social ul{
+    margin-top: 10px;
+    padding: 0;
+}
+
+.tutor-social ul li{
+    display: inline-block;
+}
+
+.tutor-social ul li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.tutor-social ul li a{
+    font-size: 18px;
+    color: #76777a;
+    transition: all 200ms ease;
+}
+
+.tutor-social ul li a:hover{
+    color: #14bdee;
+    cursor: pointer;
+}
+
+/* MAIN / NEWS */
+
+.news_row{
+    margin-top: 55px;
+}
+
+.news{
+    padding: 100px 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+.news-title{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.news-title h2{
+    font-weight: 700;
+    font-size: 32px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    color: #384158;
+    margin-bottom: 0;
+}
+
+.news-text{
+    line-height: 1.85;
+    margin-top: 14px;
+}
+
+.col-lg-7{
+    padding-right: 45px;
+}
+
+.col-lg-5{
+    padding-left: 15px;
+}
+
+.col-lg-7 .card{
+    border: none;
+    margin-bottom: 80px;
+}
+
+.col-lg-7 .card-title a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #384158;
+    line-height: 1.4;
+    transition: all 200ms ease;
+}
+
+.col-lg-7 .card-title a:hover{
+    color: #14bdee;
+}
+
+.card-list{
+    margin-top: 11px;
+}
+
+.card-list ul{
+    padding: 0;
+}
+
+.card-list ul li{
+    position: relative;
+    display: inline-block;
+}
+
+.card-list ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #b5b8be;
+    text-transform: uppercase;
+    transition: all 200ms ease
+}
+
+.card-list ul li a:hover{
+    color: #14bdee;
+}
+
+.col-lg-7 .card .card-text{
+    margin-top: 13px;
+}
+
+.card-list ul li:not(:last-of-type)::after {
+    display: inline-block;
+    position: relative;
+    content: '|';
+    margin-left: 14px;
+    margin-right: 11px;
+}
+
+.card-button{
+    margin-top: 20px;
+}
+
+.card-button a{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #384158;
+    text-decoration: underline;
+    transition: all 200ms ease;
+    padding: 0;
+}
+
+.card-button a:hover{
+    color: #14bdee;
+    text-decoration: underline;
+}
+
+.news-item-title a{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.55;
+    color: #384158;
+    transition: all 200ms ease;
+}
+
+.news-item-title a:hover{
+    color: #14bdee;
+}
+
+.news-item:not(:last-child) {
+    padding-bottom: 31px;
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.news-item:not(:first-child)
+{
+	padding-top: 29px;
+}
+
+.news-info-list{
+    margin-top: 11px;
+}
+
+.news-info-list ul{
+    padding: 0;
+}
+
+.news-info-list ul li{
+    position: relative;
+    display: inline-block;
+}
+
+.news-info-list ul li:not(:last-of-type)::after {
+    display: inline-block;
+    position: relative;
+    content: '|';
+    margin-left: 14px;
+    margin-right: 11px;
+}
+
+.news-info-list ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #b5b8be;
+    text-transform: uppercase;
+    transition: all 200ms ease
+}
+
+.news-info-list ul li a:hover{
+    color: #14bdee;
+}
+
+/* MAIN / SUBSCRIBE */
+.subscribe{
+    font-family: 'Roboto Slab', serif;
+    background-image: url('../images/newsletter.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.subscribe-info-title{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subscribe-info-content{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.subscribe-form form input{
+    width: 300px;
+    height: 40px;
+    background: rgba(255,255,255,0.4);
+    border: none;
+    outline: none;
+    padding: 0 0 0 20px;
+    color: #FFFFFF;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+.subscribe-form form input::placeholder
+{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color: #FFFFFF !important;
+}
+
+.subscribe-form form button{
+    width: 136px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #14bdee;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 0 6px;
+    margin-bottom: 1px;
+}
+
+
+/* FOOTER */
+
+footer{
+    font-family: 'Roboto Slab', serif;
+    background-image: url('../images/footer_background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1e2434;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.footer-content{
+    padding-bottom: 55px;
+}
+
+.footer-logo{
+    width: auto;
+    height: auto;
+}
+
+.footer-text{
+    display: block;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 0.75;
+	color: #fff;
+    transition: all 300ms ease;
+}
+
+.footer-text span{
+    color: #14bdee;
+}
+
+.footer-about{
+    margin-top: 31px;
+}
+
+.footer-social-list{
+    margin-top: 25px;
+}
+
+.footer-social-list ul{
+    padding-left: 0;
+}
+
+.footer-social-list ul li{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: #4b505d;
+    border-radius: 50%;
+    transition: all 200ms ease;
+}
+
+.footer-social-list ul li:hover{
+    background-color: #14bdee;
+}
+
+.footer-social-list ul li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social-list ul li a{
+    display: block;
+    text-align: center;
+}
+
+.footer-social-list ul li a i{
+    color: #FFFFFF;
+    line-height: 45px;
+}
+
+.footer-about-1 ul{
+    padding-left: 0;
+}
+
+.footer-about-1 ul li:first-child{
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 0.75;
+}
+
+.footer-about-1 ul li:nth-child(2){
+    margin-top: 33px;
+}
+
+.footer-about-1 ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+.footer-about-1 ul li:not(:first-child){
+    font-size: 14px;
+    font-weight: 400;
+    color: #b5b8be;
+}
+
+.links-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 0.75;
+}
+
+.footer-links{
+    margin-top: 33px;
+    padding-left: 0;
+}
+
+.footer-links li{
+    display: inline-block;
+    width: 120px;
+}
+
+.footer-links li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.footer-links li a {
+    font-size: 14px;
+    color: #b5b8be;
+    transition: all 200ms ease;
+}
+
+.footer-links li a:hover{
+    color: #14bdee;
+}
+
+.mobile-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 0.75;
+}
+
+.mobile-list{
+    padding-top: 35px;
+    padding-left: 0;
+}
+
+.mobile-list li{
+    margin-bottom: 10px;
+}
+
+.terms{
+    height: 60px;
+    border-top: solid 1px #353a49;
+    padding-top: 10px;
+}
+
+.terms-list li{
+    display: inline-block;
+}
+
+.terms-list li a{
+    font-size: 14px;
+    color: #b5b8be;
+    transition: all 200ms ease;
+}
+
+.terms-list li a:hover{
+    color: #14bdee;
+}
+
+.terms-list li:not(:last-child){
+    margin-right: 50px;
+}
+
 
 @media (max-width: 992px) {
     .nav-info ul{
@@ -709,6 +1336,58 @@ header.scrolled .nav-text
 
     .courses-cards .card{
         margin-bottom: 40px
+    }
+
+    .counter-form{
+        height: unset;
+        width: 100%;
+        padding: 40px 60px;
+        margin: 10px 0 80px 0;
+    }
+
+    .milestone:not(:last-child)::after {
+        content: none;
+    }
+
+    .event-interval{
+        margin-right: 15px;
+    }
+
+    .tutor-image{
+        width: 160px;
+        height: 140px;
+    }
+
+    .subscribe-form{
+        margin-top: 20px;
+    }
+
+    .footer-main{
+        margin-bottom: 60px;
+    }
+
+    .footer-about-1 ul{
+        margin-bottom: 60px;
+    }
+
+
+    .footer-links li{
+        display: block;
+        width: auto;
+        margin-bottom: 60px;
+    }
+
+    .terms-list{
+        margin-top: 30px;
+    }
+
+    .terms-list li:not(:last-child){
+        margin-right: 20px;
+    }
+
+    .terms{
+        height: auto;
+        padding: 30px 0;
     }
 }
 

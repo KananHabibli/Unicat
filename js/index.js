@@ -1,23 +1,23 @@
 $(document).ready(function() {
     $('.search-box').hide()
 
+    checkOnScreen()
+
     // MILESTONES
-     // Add event on document scroll
     $(window).scroll(function() {
 
-        // Cycle through each counter
-        $(".count").each(function() {
-
-            // Check if counter is visible
-            if ($(this).isOnScreen()) {
-
-            // Start counter
-            startCounter($(this));
-
-            }
-        });
+      checkOnScreen()
+        
     });
 })
+
+const checkOnScreen = () => {
+  $(".count").each(function() {
+    if ($(this).isOnScreen()) {
+      startCounter($(this));
+    }
+});
+}
 
 
 const searchButton = $('.search-button')
@@ -70,9 +70,6 @@ function hex(x) {
 
 // MILESTONES 
   
-  // Check if an element is on screen
-  // Thanks to Adjit - taken from the url below
-  // Reference : https://stackoverflow.com/questions/23222131/jquery-fire-action-when-element-is-in-view#answer-23222523
   $.fn.isOnScreen = function() {
   
     var win = $(window);
@@ -94,18 +91,8 @@ function hex(x) {
   
   };
   
-  
-  //Run counter, separate function so we can call it from multiple places
   function startCounter(counterElement) {
-  
-    // Check if it has only just become visible on this scroll
-    // if (counterElement.hasClass("notVisible")) {
-  
-      // Remove notVisible class
-    //   counterElement.removeClass("notVisible");
     console.log('start counting')
-  
-      // Run your counter animation
       counterElement.prop('Counter', 0).animate({
         Counter: counterElement.attr("counter-lim")
       }, {
@@ -114,5 +101,5 @@ function hex(x) {
           counterElement.text(Math.ceil(now).toLocaleString());
         }
       });
-    // }
   }
+
