@@ -1,0 +1,263 @@
+/* HEADER / NAV */
+
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+    background-color: #fff;
+}
+
+header.scrolled
+{
+    top: -40px;
+}
+
+header.scrolled .nav-menu
+{
+	height: 70px;
+}
+
+header.scrolled .nav-text
+{
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.scrolled .nav-list .nav-elem a{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.scrolled .search-button i{
+    font-size: 15px;
+}
+
+.nav-info{
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    background-color:  #14bdee;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-info ul li{
+    margin-right: 10px;
+}
+
+.nav-register{
+    background-color: #f3f3f3;
+    color: #384158;
+    height: 40px;
+    font-weight: 500;
+}
+
+.nav-register:hover{
+    text-decoration: none;
+    color: #384158;
+}
+
+.nav-logo{
+    width: auto;
+    height: 80px;
+}
+
+.nav-text{
+    display: block;
+    top: 35%;
+    font-family: 'Roboto Slab', serif;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 0.75;
+	color: #384158;
+    margin-left: 7px;
+    margin-top: 25px;
+    transition: all 300ms ease;
+}
+
+.nav-text span{
+    color: #14bdee;
+}
+
+.nav-list .nav-elem{
+    display: inline-block;
+    position: relative;
+}
+
+.nav-list .nav-elem{
+    margin-left: 44px;
+}
+
+.nav-list .nav-elem.active::after{
+    display: block;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #14bdee;
+	content: '';
+}
+
+.nav-list .nav-elem a{
+    font-size: 19px;
+	font-weight: 700;
+	color: #384158;
+}
+
+.nav-list .nav-elem a:hover, .nav-list .nav-elem.active a{
+    color: #14bdee;
+}
+
+.nav-list, .search-button, .shopping-cart{
+    display: inline-block;
+}
+
+.search-button{
+    margin-left: 46px;
+}
+
+.shopping-cart, .sidebar-open{
+    margin-left: 23px;
+}
+
+.search-button i, .shopping-cart i{
+    font-size: 18px;
+    color: #181818;
+}
+
+.sidebar-open{
+    display: none;
+}
+
+.sidebar-open i, .sidebar-close i{
+    font-size: 20px;
+    color: #353535;
+}
+
+.sidebar-close i:hover{
+    color: grey;
+}
+
+
+.search-button:hover i, .shopping-cart:hover i, .sidebar-open:hover i{
+    cursor: pointer;
+	color: #14bdee;
+}
+
+.search-box{
+    background-color: #14bdee;
+    width: 100%;
+    height: 73px;
+    transition: all 200ms ease;
+    position: absolute;
+}
+
+.search-box input{
+    display: inline-block;
+    height: 40px;
+    width: 370px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+.search-box  button{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+    background-color: #efefef;
+}
+
+
+/* SIDEBAR MENU */
+
+.sidebar-menu{
+    position: fixed;
+    top: 0;
+    right: -400px;
+    height: 100vh;
+    width: 400px;
+    background-color: #fff;
+    z-index: 101;
+    transition: all 500ms ease;
+}
+
+.sidebar-close-container{
+    background-color: blue;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+}
+
+.sidebar-close-container .sidebar-close{
+    position: absolute;
+    right: 60px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+
+.sidebar{
+    padding-right: 60px;
+    padding-top: 87px;
+    padding-left: 50px;
+}
+
+
+
+.sidebar input{
+    display: inline-block;
+    width: 230px;
+    min-width: 150px;
+    height: 40px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    /* margin-left: 4px; */
+    color: rgba(0,0,0,0.5);
+}
+
+.sidebar-search-button{
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.sidebar-list{
+    margin-top: 50px;
+}
+
+.sidebar-elem{
+    margin-bottom: 9px;
+}
+
+.sidebar-elem a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,1);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    transition: all 300ms ease;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+.sidebar-elem a:hover{
+    color: #14bdee
+}

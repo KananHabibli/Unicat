@@ -1,0 +1,36 @@
+/* GENERAL */
+body
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	background: #FFFFFF;
+	color: #a5a5a5;
+}
+
+a, a:hover, a:visited, a:active, a:link{
+    text-decoration: none;
+}
+
+ul{
+	list-style: none;
+	margin-bottom: 0px;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 1.85;
+	font-weight: 400;
+	color: #76777a;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+p:last-of-type {
+    margin: 0;
+}
+
+
+.card{
+    border: none;
+}
