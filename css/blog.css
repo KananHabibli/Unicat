@@ -1,0 +1,191 @@
+main{
+    margin-top: 125px;
+}
+
+/* MAIN / PAGE TAIL */
+
+.page-tail{
+    background-color: rgb(233, 236, 239);
+    height: 40px;
+}
+
+.breadcrumb{
+    margin-bottom: 0;
+}
+
+.breadcrumb li a{
+    color: #000;
+}
+
+.breadcrumb li a:hover{
+    color: #14bdee;
+}
+
+/* MAIN / BLOG */
+
+.blog{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.blog-container{
+    position: relative;
+    height: 1200px;
+}
+
+.blog-post{
+    width: calc((100% - 60px) / 3);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(29,34,47,0.1);
+    margin-bottom: 30px;
+    transition: all 200ms ease;
+}
+
+.blog-post .card:hover
+{
+	box-shadow: 0px 5px 40px rgba(29,34,47,0.15);
+}
+
+.card .card-body{
+    padding-left: 32px;
+    padding-right: 30px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.card h5 a{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: rgb(56, 65, 88);
+    transition: all 200ms ease;
+}
+
+.card h5 a:hover{
+    color: #14bdee;
+}
+
+.card ul{
+    margin-top: 11px;
+    padding: 0;
+}
+
+.card li {
+    display: inline-block;
+    position: relative;
+}
+
+.card li:first-child::after{
+    display: inline-block;
+    position: relative;
+    content: '|';
+    margin-left: 14px;
+    margin-right: 11px;
+}
+
+.card li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(181, 184, 190);
+    text-transform: uppercase;
+    transition: all 200ms ease;
+}
+
+.card li a:hover{
+    color: #14bdee;
+}
+
+.loadMore
+{
+	width: 150px;
+	height: 46px;
+	border-radius: 3px;
+	background: #14bdee;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+.loadMore:hover
+{
+	box-shadow: 0px 5px 40px rgba(0,0,0,0.15);
+}
+.loadMore a
+{
+	display: block;
+	line-height: 46px;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+/* MAIN / SUBSCRIBE */
+.subscribe{
+    font-family: 'Roboto Slab', serif;
+    background-image: url('../images/newsletter.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.subscribe-info-title{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subscribe-info-content{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.subscribe-form form input{
+    width: 300px;
+    height: 40px;
+    background: rgba(255,255,255,0.4);
+    border: none;
+    outline: none;
+    padding: 0 0 0 20px;
+    color: #FFFFFF;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+.subscribe-form form input::placeholder
+{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color: #FFFFFF !important;
+}
+
+.subscribe-form form button{
+    width: 136px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #14bdee;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 0 6px;
+    margin-bottom: 1px;
+}
+
+@media (max-width: 800px) {
+    .card{
+        width: calc((100% - 30px) / 2);
+    }
+
+}
