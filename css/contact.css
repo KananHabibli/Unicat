@@ -1,0 +1,253 @@
+main{
+    margin-top: 125px;
+}
+
+/* MAIN / PAGE TAIL */
+
+.page-tail{
+    background-color: rgb(233, 236, 239);
+    height: 40px;
+}
+
+.breadcrumb{
+    margin-bottom: 0;
+}
+
+.breadcrumb li a{
+    color: #000;
+}
+
+.breadcrumb li a:hover{
+    color: #14bdee;
+}
+
+
+.contact
+{
+	width: 100%;
+	padding-bottom: 100px;
+}
+.contact_map
+{
+	width: 100%;
+}
+.map
+{
+	width: 100%;
+}
+.google_map
+{
+	width: 100%;
+	height: 500px;
+}
+.map_container
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#map
+{
+	width: 100%;
+	height: calc(100% + 30px);
+}
+#content
+{
+	width: 180px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #76777a;
+	line-height: 1.71;
+}
+
+.contact-info{
+    margin-top: 100px;
+}
+
+.contact-form-title{
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(56, 65, 88);
+}
+
+.form-item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.contact-form form > div:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.contact-form form{
+    margin-top: 35px;
+}
+
+.contact-form form label{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(56, 65, 88);
+    margin-bottom: 12px;
+}
+
+.contact-form-input{
+    width: 100%;
+    height: 46px;
+    border: solid 1px rgb(217, 217, 217);
+    border-radius: 3px;
+    padding-left: 19px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(44, 49, 69);
+}
+
+.contact-form-textarea{
+    width: 100%;
+    height: 150px;
+    padding-top: 15px;
+}
+
+.contact-button{
+    width: 150px;
+    height: 46px;
+    background: rgb(20, 189, 238);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.contact-detail{
+    padding-left: 45px;
+}
+
+.detail-title{
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(56, 65, 88);
+}
+
+.detail-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.85;
+    font-weight: 400;
+    color: rgb(118, 119, 122);
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    margin-top: 30px;
+}
+
+.detail-address-1, .detail-address-2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(56, 65, 88);
+    margin-top: 30px;
+}
+
+.address-list-1, .address-list-2{
+    margin-top: 15px;
+    padding: 0;
+}
+
+.address-list-1 li, .address-list-2 li {
+    font-size: 14px;
+    color: rgb(94, 98, 113);
+}
+
+.address-list-1 li:not(:last-child), .address-list-2 li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+/* MAIN / SUBSCRIBE */
+.subscribe{
+    font-family: 'Roboto Slab', serif;
+    background-image: url('../images/newsletter.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.subscribe-info-title{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subscribe-info-content{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.subscribe-form form input{
+    width: 300px;
+    height: 40px;
+    background: rgba(255,255,255,0.4);
+    border: none;
+    outline: none;
+    padding: 0 0 0 20px;
+    color: #FFFFFF;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+.subscribe-form form input::placeholder
+{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color: #FFFFFF !important;
+}
+
+.subscribe-form form button{
+    width: 136px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #14bdee;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 0 6px;
+    margin-bottom: 1px;
+}
+
+@media (max-width: 800px) {
+    .contact-form form label{
+        font-size: 14px;
+    }
+    
+    .contact-detail{
+        padding-left: 0;
+        margin-top: 80px;
+    }
+
+    .detail-info{
+        font-size: 24px;
+    }
+
+    .detail-text{
+        font-size: 13px;
+    }
+
+    .detail-address-1, .detail-address-2{
+        font-size: 16px;
+    }
+}

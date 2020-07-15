@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Unicat</title>
   </head>
   <body>
@@ -59,10 +59,10 @@
                                     <li class="nav-elem">
                                         <a href="courses.html">Courses</a>
                                     </li>
-                                    <li class="nav-elem active">
+                                    <li class="nav-elem">
                                         <a href="blog.html">Blog</a>
                                     </li>
-                                    <li class="nav-elem">
+                                    <li class="nav-elem active">
                                         <a href="contact.html">Contact</a>
                                     </li>
                                 </ul>
@@ -136,175 +136,86 @@
                 <div class="container">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
                     </ol>
                 </div>
             </nav>
         </div>
 
-        <!-- BLOG -->
-        <div class="blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="blog-container">
-                            <div class="blog-post" style="position: absolute;top: 0;left: 0;">
-                                <div class="card">
-                                    <img src="images/blog_1.jpg" class="card-img-top" alt>
-                                    <div class="card-body">
-                                      <h5 class="card-title">
-                                          <a href="#">Here's What You Need to Know About Online Testing</a>
-                                      </h5>
-                                      <ul>
-                                          <li>
-                                              <a href="#">Admin</a>
-                                          </li>
-                                          <li>
-                                              <a href="#">Noverber 11, 2017</a>
-                                          </li>
-                                      </ul>
-                                      <p class="card-text">Policy analysts generally agree on a need for reform, but not on which path policymakers should take...</p>
-                                    </div>
+        
+
+        <!-- CONTACT -->
+        <div class="contact">
+
+            <div class="contact_map">
+
+                <!-- Google Map -->
+                
+                <div class="map">
+                    <div id="google_map" class="google_map">
+                        <div class="map_container">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+            <div class="contact-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="contact-form">
+                                <div class="contact-form-title">
+                                    Contact Form
                                 </div>
+                                <form action="">
+                                    <div>
+                                        <label for="name">Name</label>
+                                        <input class="contact-form-input" type="text" >
+                                    </div>
+                                    <div>
+                                        <label for="email">Email</label>
+                                        <input class="contact-form-input" type="email" >
+                                    </div>
+                                    <div>
+                                        <label for="message">Message</label>
+                                        <textarea class="contact-form-input contact-form-textarea" name="" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <button class="contact-button">Submit Now</button>
+                                </form>
                             </div>
-                            <div class="blog-post" style="position: absolute;top: 0;left: 390px;">
-                                <div class="card">
-                                    <div class="card-body">
-                                      <h5 class="card-title">
-                                          <a href="#">With Changing Students and Times</a>
-                                      </h5>
-                                      <ul>
-                                          <li>
-                                              <a href="#">Admin</a>
-                                          </li>
-                                          <li>
-                                              <a href="#">Noverber 11, 2017</a>
-                                          </li>
-                                      </ul>
-                                      <p class="card-text">Policy analysts generally agree on a need for reform, but not on which path policymakers should take...</p>
-                                    </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="contact-detail">
+                                <div class="detail-title">
+                                    Contact Info
                                 </div>
-                            </div>
-                            <div class="blog-post" style="position: absolute;top: 0;left: 780px;">
-                                <div class="card">
-                                    <video
-                                            id="my-video"
-                                            class="video-js"
-                                            controls
-                                            width="100%"
-                                            poster="images/blog_2.jpg"
-                                            data-setup="{}"
-                                        >
-                                            <source src="images/mov_bbb.mp4" type="video/mp4" />
-                                            <p class="vjs-no-js">
-                                            To view this video please enable JavaScript, and consider upgrading to a
-                                            web browser that
-                                            <a href="https://videojs.com/html5-video-support/" target="_blank"
-                                                >supports HTML5 video</a
-                                            >
-                                            </p>
-                                    </video>
-                                    <div class="card-body">
-                                      <h5 class="card-title">
-                                          <a href="#">Building Skills Outside the Classroom With New Ways</a>
-                                      </h5>
-                                      <ul>
-                                          <li>
-                                              <a href="#">Admin</a>
-                                          </li>
-                                          <li>
-                                              <a href="#">Noverber 11, 2017</a>
-                                          </li>
-                                      </ul>
-                                      <p class="card-text">Policy analysts generally agree on a need for reform, but not on which path policymakers should take...</p>
-                                    </div>
+                                <p class="detail-text">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a distribution of letters.
+                                </p>
+                                <div class="detail-address-1">
+                                    New York Office
                                 </div>
-                            </div>
-                            <div class="blog-post" style="position: absolute;top: 450px;left: 0;">
-                                <div class="card">
-                                    <img src="images/blog_2.jpg" class="card-img-top" alt>
-                                    <div class="card-body">
-                                      <h5 class="card-title">
-                                          <a href="#">Here's What You Need to Know About Online Testing</a>
-                                      </h5>
-                                      <ul>
-                                          <li>
-                                              <a href="#">Admin</a>
-                                          </li>
-                                          <li>
-                                              <a href="#">Noverber 11, 2017</a>
-                                          </li>
-                                      </ul>
-                                      <p class="card-text">Policy analysts generally agree on a need for reform, but not on which path policymakers should take...</p>
-                                    </div>
+                                <ul class="address-list-1">
+                                    <li>T8/480 Collins St, Melbourne VIC 3000, New York</li>
+                                    <li>1-234-567-89011</li>
+                                    <li>info.deercreative@gmail.com</li>
+                                </ul>
+                                <div class="detail-address-2">
+                                    Australia Office
                                 </div>
-                            </div>
-                            <div class="blog-post" style="position: absolute;top: 230px;left: 390px;">
-                                <div class="card">
-                                    <img src="images/blog_3.jpg" class="card-img-top" alt>
-                                    <div class="card-body">
-                                      <h5 class="card-title">
-                                          <a href="#">Here's What You Need to Know About Online Testing</a>
-                                      </h5>
-                                      <ul>
-                                          <li>
-                                              <a href="#">Admin</a>
-                                          </li>
-                                          <li>
-                                              <a href="#">Noverber 11, 2017</a>
-                                          </li>
-                                      </ul>
-                                      <p class="card-text">Policy analysts generally agree on a need for reform, but not on which path policymakers should take...</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-post" style="position: absolute;top: 450px;left: 780px;">
-                                <div class="card">
-                                    <img src="images/blog_4.jpg" class="card-img-top" alt>
-                                    <div class="card-body">
-                                      <h5 class="card-title">
-                                          <a href="#">Here's What You Need to Know About Online Testing</a>
-                                      </h5>
-                                      <ul>
-                                          <li>
-                                              <a href="#">Admin</a>
-                                          </li>
-                                          <li>
-                                              <a href="#">Noverber 11, 2017</a>
-                                          </li>
-                                      </ul>
-                                      <p class="card-text">Policy analysts generally agree on a need for reform, but not on which path policymakers should take...</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-post" style="position: absolute;top: 720px;left: 390px;">
-                                <div class="card">
-                                    <img src="images/blog_3.jpg" class="card-img-top" alt>
-                                    <div class="card-body">
-                                      <h5 class="card-title">
-                                          <a href="#">Here's What You Need to Know About Online Testing</a>
-                                      </h5>
-                                      <ul>
-                                          <li>
-                                              <a href="#">Admin</a>
-                                          </li>
-                                          <li>
-                                              <a href="#">Noverber 11, 2017</a>
-                                          </li>
-                                      </ul>
-                                      <p class="card-text">Policy analysts generally agree on a need for reform, but not on which path policymakers should take...</p>
-                                    </div>
-                                </div>
+                                <ul class="address-list-2">
+                                    <li>Forrest Ray, 191-103 Integer Rd, Corona Australia</li>
+                                    <li>1-234-567-89011</li>
+                                    <li>info.deercreative@gmail.com</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="loadMore text-center">
-                    <a href="#">Load More</a>
-                </div>
             </div>
         </div>
-
 
         <!-- SUBSCRIBE -->
         <div class="subscribe">
@@ -450,9 +361,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
     <script src="js/index.js"></script>
-    <script src="js/blog.js"></script>
+    <script src="js/contact.js"></script>
     <script type="text/javascript">
         document.write();
         let date = new Date().getFullYear()
